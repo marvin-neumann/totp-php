@@ -11,5 +11,13 @@ namespace TOTP;
 
 class TOTP
 {
+    public static function timeCounter()
+    {
+        $now = time();
+        $timeStart = mktime();
+        $timeInterval = 30;
+        $timeCounter = floor(($now - $timeStart) / $timeInterval);
+        return $timeCounter;
+    }
 
 }
