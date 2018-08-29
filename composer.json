@@ -1,0 +1,12 @@
+{
+  "name": "marvin-neumann/totp",
+  "description": "Generates a Time-based One-Time Password (TOTP)",
+  "minimum-stability": "dev",
+  "license": "MIT License",
+  "authors": [
+    {
+      "name": "Marvin Neumann",
+      "email": "marvin.neumann@web.de"
+    }
+  ]
+}
