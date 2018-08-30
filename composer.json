@@ -1,5 +1,5 @@
 {
-  "name": "marvin-neumann/totp",
+  "name": "marvin-neumann/totp-php",
   "description": "Generates a Time-based One-Time Password (TOTP)",
   "minimum-stability": "dev",
   "license": "MIT",
@@ -8,5 +8,16 @@
       "name": "Marvin Neumann",
       "email": "marvin.neumann@web.de"
     }
-  ]
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TOTP\\": "src/"
+    }
+  }
 }
