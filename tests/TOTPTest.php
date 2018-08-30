@@ -13,11 +13,27 @@ use PHPUnit\Framework\TestCase;
 
 class TOTPTest extends TestCase
 {
+    /**
+     * @var float $timeCounter
+     */
+    private $timeCounter;
 
-    public function testTimeCounter()
+    public function testTimeCounterIsNotEmpty()
+    {
+        $this->assertNotEmpty($this->timeCounter, 'timeCounter is Empty');
+    }
+
+    public function testTimeCounterIsNotNull()
+    {
+        $this->assertNotNull($this->timeCounter, 'timeCounter is Null');
+    }
+
+    /**
+     * @return void
+     */
+    public function setUp(): void
     {
         $totp = new TOTP();
-        $timeCounter = $totp->timeCounter();
-        $this->assertNotEmpty($timeCounter, "$timeCounter is not empty!");
+        $this->timeCounter = $totp->timeCounter();
     }
 }

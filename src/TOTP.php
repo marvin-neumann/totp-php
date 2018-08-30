@@ -29,7 +29,8 @@ class TOTP
 
     public function __construct()
     {
-        $this->timeCounter();
+        $timeCounter = $this->timeCounter();
+
     }
 
     /**

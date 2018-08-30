@@ -1,7 +1,7 @@
 {
   "name": "marvin-neumann/totp-php",
   "description": "Generates a Time-based One-Time Password (TOTP)",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
